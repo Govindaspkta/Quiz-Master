@@ -1,0 +1,112 @@
+.stat-card {
+  height: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.card-icon {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+.card-content {
+  padding-top: 0;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--ion-color-primary);
+}
+
+.stat-info {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: var(--ion-color-medium);
+}
+
+.trend {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.trend ion-icon {
+  margin-right: 4px;
+}
+
+.positive {
+  background-color: rgba(var(--ion-color-success-rgb), 0.15);
+  color: var(--ion-color-success);
+}
+
+.negative {
+  background-color: rgba(var(--ion-color-danger-rgb), 0.15);
+  color: var(--ion-color-danger);
+}
+
+.alert {
+  background-color: rgba(var(--ion-color-warning-rgb), 0.15);
+  color: var(--ion-color-warning-shade);
+}
+
+.revenue {
+  background-color: rgba(var(--ion-color-tertiary-rgb), 0.15);
+  color: var(--ion-color-tertiary-shade);
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.chart-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.analytics-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.activity-time {
+  font-size: 0.8rem;
+  color: var(--ion-color-medium);
+}
+
+.selected-item {
+  --background: rgba(var(--ion-color-primary-rgb), 0.1);
+  --color: var(--ion-color-primary);
+  font-weight: 500;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .analytics-controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .stat-number {
+    font-size: 1.5rem;
+  }
+}

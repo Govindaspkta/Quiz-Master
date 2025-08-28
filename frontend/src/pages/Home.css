@@ -1,0 +1,39 @@
+
+/* Hide scrollbars but keep functionality */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Force hardware acceleration for smoother animations */
+.hw-accelerate {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Optimize images for performance */
+img {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* Enable smooth scrolling */
+.smooth-scroll {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Add scroll snap for better UX */
+.snap-scroll {
+  scroll-snap-type: x mandatory;
+}
+
+/* Button hover/active states */
+.play-button:active {
+  transform: scale(0.97);
+}

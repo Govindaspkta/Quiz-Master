@@ -1,0 +1,110 @@
+
+
+/* Custom Alert Styling */
+.custom-alert .alert-wrapper {
+  /* --background: var(--background); */
+  --color: var(--text-primary);
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  background-color: rgb(255, 187, 42);
+}
+
+.custom-alert .alert-head {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.custom-alert .alert-message {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.custom-alert .alert-button-cancel {
+  --color: var(--text-secondary);
+  --background: transparent;
+  --background-activated: rgba(108, 117, 125, 0.1);
+  font-weight: 500;
+}
+
+.custom-alert .alert-button-confirm {
+  --color: #dc3545;
+  --background: transparent;
+  --background-activated: rgba(220, 53, 69, 0.1);
+  font-weight: 600;
+}
+
+/* Card hover effects for better interactivity */
+ion-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+ion-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(204, 160, 0, 0.2) !important;
+}
+
+/* Custom item styling */
+ion-item.ion-activatable {
+  --background: transparent;
+  --color: var(--text-primary);
+  transition: all 0.2s ease;
+}
+
+ion-item.ion-activatable:hover {
+  --background: rgba(204, 160, 0, 0.05);
+}
+
+/* Custom ripple effect color */
+ion-ripple-effect {
+  --color: var(--accent-gold);
+}
+
+/* Avatar styling improvements */
+ion-avatar {
+  border: 3px solid var(--accent-gold);
+  box-shadow: 0 2px 8px rgba(204, 160, 0, 0.3);
+}
+
+/* Improve list styling */
+ion-list {
+  background: transparent;
+}
+
+/* Custom toggle styling for better visibility */
+ion-toggle {
+  --handle-width: 22px;
+  --handle-height: 22px;
+  --track-width: 44px;
+  --track-height: 24px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profile-content {
+    padding: 16px;
+  }
+  
+  ion-card {
+    margin: 8px 0;
+  }
+}
+
+/* Dark mode specific adjustments */
+@media (prefers-color-scheme: dark) {
+  .custom-alert .alert-wrapper {
+   background-color: #dc3545 !important;
+  }
+  
+  ion-card {
+    border: 1px solid rgba(240, 203, 70, 0.2);
+    box-shadow: 0 2px 8px rgba(240, 203, 70, 0.15);
+  }
+  
+  ion-card:hover {
+    box-shadow: 0 4px 12px rgba(240, 203, 70, 0.25) !important;
+  }
+}
+.alert-overlay {
+  --background: rgba(0, 0, 0, 0.5); /* darken the overlay */
+}
